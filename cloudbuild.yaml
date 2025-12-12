@@ -64,7 +64,6 @@ steps:
 options:
   # Hinweis: Setzen Sie das Logging auf 'CLOUD_LOGGING_ONLY'
   logging: CLOUD_LOGGING_ONLY
-  timeout: "600s"   # 10 Minuten
 
 
 # TODO: Definieren Sie die Substitution-Variablen für die Umgebungsvariablen Region, Bucket-Name und Artifact Registry Repository
@@ -80,4 +79,4 @@ substitutions:
   _AR_REPO: "transcoderrepo"
 
 # TODO: Setzen Sie ein Timeout von 10 Minuten für den gesamten Build
-# Bei Options mit timeout:600s
+timeout: "600s"   # 10 Minuten
